@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh ;
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.left div{
+    flex: 1;
+    background-color: lavender;
+    margin:5px;
+}
+.right{
+    flex: 1;
+    background-color: cornflowerblue;
+    margin: 5px;
+}
