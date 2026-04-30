@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.box{
+    padding: 20px;
+    background-color: beige;
+    border: 1px solid black;
+}
+.left,.right{
+    width: 150px;
+}
+.middle{
+    flex: 1;
+}
