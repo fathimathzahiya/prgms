@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+  
+}
+
+.card {
+  border: 2px solid black;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  height: 200px;
+  border-radius: 5px;
+  background-color: honeydew;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.center {
+  background-color: antiquewhite;
+}
+.center:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
