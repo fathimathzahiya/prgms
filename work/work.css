@@ -20,7 +20,7 @@
 }
 
 .menu a:hover {
-  color: black;
+  color: rgb(97, 86, 86);
 }
 
 .search {
@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 .search button:hover {
-  background: black;
+  background: rgb(144, 133, 133);
   color: white;
 }
 .main {
@@ -50,7 +50,7 @@
 .sidebar {
   width: 200px;
   padding: 20px;
-  background-color:rgb(148, 62, 99) ;
+  background-color:rgb(170, 74, 116) ;
   height: 659px;
   display: flex;
   flex-direction: column;
