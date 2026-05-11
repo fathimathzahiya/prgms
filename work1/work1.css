@@ -20,7 +20,12 @@
   color :black;
   height: 70px;
 }
-
+.menuicon img{
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  display: none;
+}
 .menu{
   margin-top: 10px;
 }
@@ -147,8 +152,8 @@ aside{
 }
 
 .cargrid{
-   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
   margin-left: 150px;
   gap: 50px;
   margin-right: 100px;
@@ -356,3 +361,35 @@ aside{
   border-radius: 10px;
 }
 
+@media (max-width:1000px){
+.menuicon img{
+  display: block;
+}
+.menu a{
+  display: none;
+}
+  .top{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .cargrid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+
+}
+
+@media (max-width:768px){
+
+  .cargrid{
+    grid-template-columns: 1fr;
+  }
+
+  .top{
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    text-align: center;
+  }
+}
