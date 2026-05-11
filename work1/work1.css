@@ -19,6 +19,8 @@
   background: rgb(228, 238, 248);
   color :black;
   height: 70px;
+  width: 100%;
+  position: fixed;
 }
 .menuicon img{
   height: 30px;
@@ -117,7 +119,7 @@ aside{
    background-color: rgb(25, 20, 150);
   cursor: pointer;
 }
-.image img{
+.content img{
   margin-left: -100px;
   height: 500px;
   width: auto;
@@ -325,12 +327,21 @@ aside{
   margin-top: -5px;
   margin-bottom: 10px;
 }
-.foot1{
+.col1{
   display: flex;
-  gap: 60px;
+  flex-direction: column;
   padding-left: 150px;
   padding-right: 150px;
   margin-top: 100px;
+}
+.col1 h1{
+  margin-top: 100px;
+}
+.foot1{
+  display: flex;
+  gap: 40px;
+  padding-left: 150px;
+  padding-right: 150px;
   background-color: rgb(218, 225, 230);
   height: 300px;
   padding-top: 80px;
@@ -362,34 +373,128 @@ aside{
 }
 
 @media (max-width:1000px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 1200px;
+  }
 .menuicon img{
   display: block;
 }
 .menu a{
   display: none;
 }
-  .top{
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 
-  .cargrid{
-    grid-template-columns: repeat(2,1fr);
-  }
-
-
+.content img{
+  display: none;
 }
-
-@media (max-width:768px){
-
-  .cargrid{
-    grid-template-columns: 1fr;
-  }
-
-  .top{
-    flex-direction: column;
+.small{
+   width: 700px;
+}
+.top{
+    flex-direction: row;
     height: auto;
     gap: 10px;
     text-align: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
+.para{
+  font-size: 40px;
+  margin-left: 100px;
+}
+  .cargrid{
+    grid-template-columns: repeat(2,1fr);
+  }
+.stepbox {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+ .stepbox .card{
+    width: 350px;
+  }
+.bottombox{
+   display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+ .bottombox .card{
+     width: 350px;
+  }
+  .bottombox img{
+  height: 200px;
+  width: 349px;
+}
+
+.foot1{
+  height: 500px;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media (max-width:768px){
+  .container{
+    width: 1200px;
+  }
+.p3{
+  font-size: 40px;
+}
+  .small{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 450px;
+    padding-left: 20px;
+  }
+  .small hr{
+    height: 0px
+}
+.btn1{
+  width: 400px;
+  margin-bottom: 20px;
+}
+.para{
+  font-size: 30px;
+  margin-left: 100px;
+}
+  
+  .cargrid{
+    grid-template-columns: 1fr;
+    margin-left: 250px;
+  }
+  .cargrid .card{
+    width: 650px;
+  }
+
+  .top{
+    flex-direction: row;
+    height: auto;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .stepbox{
+  display: flex;
+  flex-direction: column;
+}
+  .stepbox .card{
+    width: 450px;
+  }
+  .bottombox{
+      display: flex;
+      flex-direction: column;
+  }
+  .bottombox .card{
+     width: 450px;
+  }
+  .bottombox img{
+  height: 200px;
+  width: 449px;
+}
 }
